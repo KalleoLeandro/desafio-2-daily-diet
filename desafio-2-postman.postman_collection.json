@@ -1,0 +1,223 @@
+{
+	"info": {
+		"_postman_id": "5cb101d5-479c-40ca-8318-0684f7494ffd",
+		"name": "desafio-2-postman",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "35290735"
+	},
+	"item": [
+		{
+			"name": "daily_diary Copy",
+			"item": [
+				{
+					"name": "users",
+					"item": [
+						{
+							"name": "users",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Teste\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/users/",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"users",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "users",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/users/",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"users",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "users_id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/users/79a26083-2d8c-4546-bdb6-7c21d7d2f5e8",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"users",
+										"79a26083-2d8c-4546-bdb6-7c21d7d2f5e8"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "meals",
+					"item": [
+						{
+							"name": "meals",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id_user\": \"8e1b2487-9ed1-4d5c-9770-6e8155d7f742\",\r\n    \"name\": \"Teste de refeição\",\r\n    \"description\": \"teste efetuado 19/10\",\r\n    \"dietValid\": true\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/meals/",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"meals",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "meals",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/meals/",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"meals",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "meals_id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/meals/",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"meals",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "meals",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{    \r\n    \"name\": \"Teste de refeição\",\r\n    \"description\": \"teste efetuado 20/10\",\r\n    \"dietValid\": false\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/meals/79a26083-2d8c-4546-bdb6-7c21d7d2f5e8",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"meals",
+										"79a26083-2d8c-4546-bdb6-7c21d7d2f5e8"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "meals",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/meals/c801a074-f946-47f6-ac9d-d29f217ad733",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"meals",
+										"c801a074-f946-47f6-ac9d-d29f217ad733"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "resume",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/meals/resume",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"meals",
+										"resume"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
